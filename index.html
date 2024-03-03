@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>GET TO KNOW ME WEBPAGE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">Paulo Guiraldo</div>
+            <ul data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+                <li>Home</li>
+                <li>News</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="banner" style="background-image: url('/images/background.jpg');">
+            <div class="glass-wrapper" data-aos="fade-down-left"></div>
+        </div>
+        <div class="hero-title">
+            <p data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">Discover ME!</p>
+            <p class="hobbies" data-aos="fade-right"
+            data-aos-offset="600"
+            data-aos-easing="ease-in-sine">Paulo Miguel Guiraldo</p>
+            <div class="details" data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="2000">
+                Hi, I am Paulo Miguel Guiraldo a 3rd year BSIT Student located at Carmona Cavite currently studying at Cavite State University at Carmona campus. I am a passionate gamer and a hardcore gymrat that is also a working student that is also intrigued in video editing. 
+            </div>
+            <div class="explore" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <button>explore</button>
+            </div>
+        </div>
+        <div class="hobby">
+            <ul class="activity">
+                <li class="active" data-img="/images/fern.jpg">
+                    <div class="thumbnail" style="background: url('/images/fern.jpg');">
+                        <div class="details">
+                            <p class="act"> Anime </p>
+                            <p class="action">I love to watch Anime!</p>
+                        </div>
+                    </div>
+                </li>
+                <li data-img="/images/gym.jpg">
+                    <div class="thumbnail" style="background: url('/images/gym.jpg');">
+                        <div class="details">
+                            <p class="act"> Gym </p>
+                            <p class="action">I love the pain of discipline!</p>
+                        </div>
+                    </div>
+                </li>
+                <li data-img="/images/coding.jpg">
+                    <div class="thumbnail" style="background: url('/images/coding.jpg');">
+                        <div class="details">
+                            <p class="act"> Coding </p>
+                            <p class="action">I have a love & hate relationship with coding</p>
+                        </div>
+                    </div>
+                </li>
+                <li data-img="/images/video\ editing.jpg">
+                    <div class="thumbnail" style="background: url('/images/video\ editing.jpg');">
+                        <div class="details">
+                            <p class="act"> Video Editing </p>
+                            <p class="action">I'm an aspiring video editor freelancer</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<style></style>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+    AOS.init();
+
+    let activities = document.querySelectorAll('.activity li');
+    let active = "/images/fern.jpg";
+
+    activities.forEach((activity) => {
+        activity.addEventListener("mouseenter", (event) => {
+            activities.forEach((activity) => {
+                activity.classList.remove("active");
+            });
+
+            event.target.classList.add("active");
+            active = event.target.getAttribute('data-img');
+            let banner = document.querySelector('.banner');
+            banner.style.backgroundImage = `url('${active}')`;
+        });
+    });
+</script>
+</html>

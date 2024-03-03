@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
+    align-items: center;
+   
+}
+
+.header .logo{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+
+.banner {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    transition: 2s ease-in;
+}
+
+.banner .glass-wrapper{
+    width: 32%;
+    height: 100%;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+} 
+
+.hero-title{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 13rem;
+}
+
+.hero-title p{
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: white;
+}
+
+.hero-title .hobbies{
+    font-size: 73px;
+    letter-spacing: 5px;
+}
+
+.hero-title .details{
+    width: 60%;
+    padding-top: 1.5rem;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    padding-bottom: 1.5rem;
+}
+
+
+.explore{
+    text-align: center;
+    margin-top: 10px;
+    margin-right:1000px;
+    
+}
+
+.explore button{
+    font-size: 18px;
+    font-weight:  600;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #33333;
+    border: none;
+    cursor: pointer;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border:none;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 12px 50px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    cursor:pointer;
+    text-transform:uppercase;
+}
+
+.hobby{
+    bottom: 25px;
+    position: absolute;
+    left: 40rem;
+}
+
+.hobby ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    width: 65vw;
+    height: 15rem;
+    align-items: center;
+}
+
+.hobby .thumbnail{
+    display: flex;
+    height: 10rem;
+    width: 18rem;
+    background-size: cover !important;
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+.hobby .thumbnail .details{
+    margin-top: auto;
+    padding: 10px 0px;
+    background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0.5px );
+-webkit-backdrop-filter: blur( 0.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.details .act{
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+.details .action{
+    font-weight: 300;
+    font-size: 12px;
+   
+}
+.hobby p{
+    color: white;
+    padding-left: 20px;
+    margin-bottom: auto;
+    line-height: 24px;
+}
+
+.hobby .active{
+    margin-top: -5rem;
+}
